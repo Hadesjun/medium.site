@@ -1,0 +1,406 @@
+o* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* header */
+
+header {
+   width: 100%;
+   margin: 0;
+   box-shadow: 1px 5px 20px grey;
+   height: 100px;
+   border-bottom: 1px solid grey;
+   margin-top: 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    background-color: white;
+    top: 0;
+ }
+   
+
+.logo {
+    width: 200px;
+    height: 100px;
+    margin-left: 100px;
+
+}
+
+/* all navbar-right */
+
+.navbar { 
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    cursor: pointer;
+}
+
+.search {
+    border-radius: 50%;
+    padding: 5px;
+    color: rgb(80, 78, 78);
+}
+
+.bookmark {
+    border-radius: 50%;
+    padding: 5px;
+    color: rgb(80, 78, 78);
+}
+
+.bell {
+    border-radius: 50%;
+    padding: 5px;
+    color: rgb(80, 78, 78);
+}
+
+.membership {
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    padding: 5px;
+}
+    
+.user {
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 5px;
+    color: rgb(80, 78, 78);
+}
+
+.user:hover , .membership:hover , .bell:hover , .bookmark:hover , .search:hover {
+    opacity: 0.2;
+}
+
+/* main */
+
+main {
+    display: flex;
+}
+
+.article-main {
+    width: 80%;
+    padding: 0px 30px 0px 100px ;
+    border-right: 1px solid grey;
+}
+
+.article-main , aside {
+    display: inline-block;
+}
+
+.tab {
+    border-bottom: 1px solid grey;
+    padding-top: 50px;
+}
+
+.tab span {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    height: 1.5em;
+    padding: 0px 5px 0px 5px; 
+}
+
+
+.tab span.tab-selected {
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+article section {
+    margin-top: 40px;
+}
+
+.section {
+    display: inline-block;
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+.bottom-text-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.img-profile {
+    height: 20px;
+    width: 20px;
+    border-radius: 40%;
+}
+
+.span-profile {
+    padding: 10px;
+}
+
+h2 {
+    margin: 10px 0px 10px 0px;
+}
+
+.content-image {
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+}
+
+.date-react {
+    color: grey;
+}
+
+.icons-bot-text {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.icons-bot-text div {
+    padding-right: 10px;
+}
+
+.icons-bot-text div:hover {
+    opacity: 0.2;
+}
+
+/* side-bar */
+
+aside {
+    height: 1500px;
+    width: 40%;
+    margin-top: 40px;
+     flex-direction: column;
+}
+
+/* conteiner-aside */
+
+/* first-step-article */
+
+.conteiner-aside {
+    border-bottom: 1px solid grey;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    margin: 0px 40px 0px 40px;
+}
+    
+
+.icons-aside {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#small-logo-medium {
+    color: black;
+    font-size: 30px;
+}
+
+.plus {
+    color: black;
+}
+
+
+#logo-twitter {
+    color: rgb(18, 85, 112);
+    font-size: 30px;
+}
+
+.conteiner-aside p {
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+}
+
+.divtwitter {
+    border: 1px solid grey;
+    border-radius: 25px;
+    text-align: center;
+    width: 400px;
+    height: 40px;
+    margin: 10px 100px 30px 100px;
+    cursor: pointer;
+}
+
+.divtwitter:hover {
+    opacity: 0.3;
+}
+
+a {
+    text-align: center;
+    padding: 20px;
+    margin-left: 5%;
+}
+
+/* second-step-article */
+
+.container-topics {
+    margin: 20px 40px 0px 40px;
+
+}
+
+.container-topics div {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mini-cont {
+    border-radius: 20px;
+    background-color: rgb(236, 231, 231);
+    margin: 0px 0px 10px 10px;
+    cursor: pointer;
+}
+
+.mini-cont:hover {
+    opacity: 0.3;
+}
+
+/* followers */
+
+.container-follow {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px 20px 40px;
+}
+
+.cs-foll {
+    margin: 20px 40px 20px 0;
+}
+
+.friends {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.friends-main {
+     display: flex;
+
+}
+
+.image-followers {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.name-friends {
+    margin-left: 10px;
+}
+
+h4 {
+   margin: 0;
+}
+
+.p-friends{
+    margin: 0;
+}
+
+.button-follow {
+    border-radius: 40px;
+    border: 1px solid rgb(90, 88, 88);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.button-follow:hover {
+    opacity: 0.2;
+}
+
+/* saved-search */
+
+.saved {
+    margin: 50px 40px 0px 40px; 
+    display: flex;
+    flex-direction: column;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+.saved p {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.content-profile {
+    display: flex; 
+}
+
+.img-content-profile {
+    width: 25px;
+    height: 25px;
+    border-radius: 40px;
+}
+
+.span-content-profile{
+    margin: 5px 5px;
+}
+
+.bottom-p-problematic {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.last-icon {
+    font-size: 10px;
+    margin: 4px 5px;
+}
+
+.write-to-you {
+    display: flex;
+    margin-top: 20px;
+}
+
+.mess-image {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+.user-mess {
+    margin: 4px 5px;
+}
+
+h6 {
+    font-size: 18px;
+    margin: 10px 0px 0px;
+}
+
+.no-open {
+    color: green;
+    margin: 10px 450px 10px 27px;
+    padding: 5px;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px
+}
+
+footer div {
+    padding: 30px;
+    margin: 0;
+    cursor: pointer;
+    color: grey;
+}
+
+footer div:hover {
+    color: black;
+}
